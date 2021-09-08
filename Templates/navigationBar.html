@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <title>{% block title %}Welcome{% endblock %} to the Catering Company</title>
+
+
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+
+<nav>
+  <div class="nav-wrapper">
+
+    <a href="/login/" class="brand-logo">Site Navigation Tab</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="/manage/">*Owner Management*</a></li>
+      <li><a href="/events/">*Event Requests*</a></li>
+      <li><a href="/staff/">*Staff Page*</a></li>
+      <li><a href="/logout/">*Logout*</a></li>
+
+    </ul>
+
+  </div>
+</nav>
+
+<body>
+  {% block body %} {% endblock %}
+</body>
+
+
+
+</html>
